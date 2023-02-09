@@ -1,37 +1,18 @@
-import { Octokit } from "octokit";
-import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.scss";
-import IssueItem from "./components/issue-item/issue-item";
+import Comments from "./components/comment/comment.component";
+import Issue from "./pages/issue-page/issue.page";
+import IssuesListPage from "./pages/issues-list-page/issues-list.page";
 
 const App = () => {
-  const [issues, setIssues] = useState([]);
-
-  const octokit = new Octokit({
-    auth: "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",
-  });
-
-  const fetchData = async () => {
-    const response = await octokit.request(
-      "GET /repos/TheOdinProject/theodinproject/issues",
-      {
-        owner: "TheOdinProject",
-        repo: "theodinproject",
-      }
-    );
-    const data = response.data;
-    setIssues(data);
-    console.log(data);
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
-
   return (
-    <div className="issues-container">
-      {issues.map((issue) => (
-        <IssueItem issue={issue} />
-      ))}
-    </div>
+    <Routes>
+      <Route path="/">
+        <Route index element={<IssuesListPage />} />
+      </Route>
+      <Route path="/issues/:number" element={<Issue />} />
+      <Route path="/hello" element={<Comments />} />
+    </Routes>
   );
 };
 

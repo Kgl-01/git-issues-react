@@ -1,0 +1,36 @@
+.comments-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   
+
+    .comment-item{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border: 1px solid grey;
+        width: 900px;
+        border-radius: 20px;
+        
+        
+        .replier-info{
+            width: max-content;
+            font-size: 14px;
+            border: 0.1px solid grey;
+            padding: 5px 10px;  
+            background-color: grey; 
+            font-weight:bold ;
+            color: white;
+         }
+
+        .comment-body{
+            width: 880px;
+            text-align: justify;
+            font-size: 14px;
+            padding: 5px 10px;
+            text-align: justify;
+        }}
+    
+}

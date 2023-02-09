@@ -1,0 +1,43 @@
+.issue-item-container{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: 950px;
+    border: 1px solid grey;
+   
+    overflow: hidden;
+    cursor: pointer;
+
+    .title{
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+        position: relative;
+        
+
+        &:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+    }
+    
+    &:hover{
+        transform: scale(1.05);
+        transition: transform 3s;
+        background-color: azure;
+    }
+
+    li{
+        list-style:circle ;
+        color: green;
+        font-size: 140%;
+        margin-left: 10px;
+        
+    }
+
+    
+    .issue-info{
+        font-size: 12px;
+        margin-left: 42px;
+    }
+}

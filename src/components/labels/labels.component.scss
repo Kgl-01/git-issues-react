@@ -1,0 +1,14 @@
+.label-item{
+    display: flex;
+    font-size: 13px;
+    margin-left: 22px;
+    
+    .label{
+        border-radius: 7px;
+        padding: 2px;
+        width: fit-content;
+        margin-left: 8px;
+        font-weight: bold;
+        color: white; 
+    }
+}

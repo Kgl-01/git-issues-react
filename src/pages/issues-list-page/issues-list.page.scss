@@ -1,0 +1,21 @@
+.issues-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .homepage-title{
+        font-size: 40px;
+        
+        &:hover{
+            color: cornflowerblue;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+    .issues-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+}
