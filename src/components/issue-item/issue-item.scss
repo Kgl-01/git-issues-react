@@ -46,7 +46,7 @@ $small: 500px;
 
     @media screen and (max-width:$small) {
         height: 110px;
-        width: 300px;
+        width: 100vw;
 
         .title{
             font-size: 12px;
