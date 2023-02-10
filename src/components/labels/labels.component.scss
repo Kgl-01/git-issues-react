@@ -1,7 +1,12 @@
+$small: 500px;
+
 .label-item{
     display: flex;
     font-size: 13px;
     margin-left: 22px;
+    @media screen and (max-width:$small) {
+        font-size: 8px;
+    }
     
     .label{
         border-radius: 7px;

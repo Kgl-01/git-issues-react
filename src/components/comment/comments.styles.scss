@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
 
-   
+   $small:500px;
 
     .comment-item{
         display: flex;
@@ -15,6 +15,7 @@
         border-radius: 20px;
         
         
+        
         .replier-info{
             width: max-content;
             font-size: 14px;
@@ -23,6 +24,7 @@
             background-color: grey; 
             font-weight:bold ;
             color: white;
+            border-radius: 20px 0px 0px 0px;
          }
 
         .comment-body{
@@ -31,6 +33,42 @@
             font-size: 14px;
             padding: 5px 10px;
             text-align: justify;
-        }}
+
+            img{
+                width:800px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            @media screen and (max-width:$small) {
+                font-size: 10px;
+            }
+        }
+    }
+
+    @media screen and (max-width:$small) {
+        .comment-item{
+            width: 400px; 
+
+            .replier-info{
+                width: max-content;
+                font-size: 11px;
+                border: 0.1px solid grey;
+                padding: 5px 10px;  
+                background-color: grey; 
+                font-weight:bold ;
+                color: white;
+                border-radius: 20px 0px 0px 0px ;
+            }
+            
+            .comment-body{
+                width: 350px;
+                img{
+                   width: 300px; 
+                }
+            }
+        }
+
+    }
     
 }

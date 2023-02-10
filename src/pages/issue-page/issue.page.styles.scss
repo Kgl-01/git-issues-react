@@ -1,4 +1,4 @@
-
+$small:500px;
 .issue-page-container{
    display: flex;
    flex-direction: column;
@@ -12,6 +12,7 @@
                 font-size: 30px;
                 display: flex;
                 flex-wrap: wrap;
+
                 .issue{
                     font-weight: 100;
                     font-style: italic;
@@ -49,5 +50,28 @@
                 cursor: pointer;
             }
         }
+        
     }
+        @media screen and (max-width:$small) {
+            .header{
+                width: 400px;
+
+                .title{
+                    font-size: 20px;
+                }
+
+                .sub-title{
+                    font-size: 12px;
+                }
+            }
+
+            .body-container{
+            font-size: 12px;
+            width: 400px;
+            border-radius: 15px;
+                img{
+                    width: 400px;
+                }
+            }
+        }
 }
