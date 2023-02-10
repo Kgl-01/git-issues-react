@@ -54,7 +54,8 @@ $small:500px;
     }
         @media screen and (max-width:$small) {
             .header{
-                width: 400px;
+                width: 380px;
+                text-align: justify;
 
                 .title{
                     font-size: 20px;
@@ -67,10 +68,15 @@ $small:500px;
 
             .body-container{
             font-size: 12px;
-            width: 400px;
+            width: 350px;
+            margin: 10px 0px;
             border-radius: 15px;
                 img{
-                    width: 400px;
+                    width: 350px;
+
+                    &:hover{
+                        transform: scale(1.2);
+                    }
                 }
             }
         }

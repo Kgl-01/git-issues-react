@@ -9,20 +9,13 @@ $small: 500px;
     border: 1px solid grey;
     overflow: hidden;
     cursor: pointer;
-    @media screen and (max-width:$small) {
-        height: fit-content;
-        width: $small;
-    }
+    
 
     .title{
         font-size: 15px;
         font-weight: bold;
         color: black;
         position: relative;
-        @media screen and (max-width:$small) {
-            font-size: 13px;
-            margin: left;
-        }
     
         
 
@@ -43,17 +36,30 @@ $small: 500px;
         color: green;
         font-size: 140%;
         margin-left: 10px;
-        @media screen and (max-width:$small) {
-            font-size: 100%;
-        }    
     }
 
     
     .issue-info{
         font-size: 12px;
-        margin-left: 42px;
-        @media screen and (max-width:$small) {
+        margin-left: 42px; 
+    }
+
+    @media screen and (max-width:$small) {
+        height: fit-content;
+        width: 400px;
+
+        .title{
+            font-size: 13px;
+            margin: left;
+        }
+
+        li{
+            font-size: 100%;
+        }
+
+        .issue-info{
             font-size: 10px;
-        }   
+        }
+
     }
 }

@@ -1,6 +1,4 @@
 import _ from "lodash";
-import { Fragment } from "react";
-import { Outlet } from "react-router-dom";
 import "./pagination.styles.scss";
 
 const Pagination = (props) => {
